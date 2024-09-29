@@ -1,0 +1,109 @@
+{# Styles #}
+<style>
+    button {
+        background: none;
+        border: 0;
+        box-sizing: border-box;
+        margin: 1em;
+        padding: 0.5em 2em;
+        box-shadow: inset 0 0 0 2px #78a797;
+        color: #78a797;
+        font-size: inherit;
+        font-weight: 700;
+        position: relative;
+        vertical-align: middle;
+        /* #f45e61 */
+    }
+
+    button::before,
+    button::after {
+        box-sizing: inherit;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .draw {
+        transition: color 0.25s;
+        /* display: flex;
+        justify-content: space-between;
+        width: 200px; */
+    }
+
+    .draw::before,
+    .draw::after {
+
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+    }
+
+
+    .draw::before {
+        top: 0;
+        left: 0;
+    }
+
+
+    .draw::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    .draw:hover {
+        color: #60daaa;
+    }
+
+
+    .draw:hover::before,
+    .draw:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+
+    .draw:hover::before {
+        border-top-color: #60daaa;
+        border-right-color: #60daaa;
+        transition: width 0.25s ease-out,
+        height 0.25s ease-out 0.25s;
+    }
+
+    .draw:hover::after {
+        border-bottom-color: #60daaa;
+        border-left-color: #60daaa;
+        transition: border-color 0s ease-out 0.5s,
+        width 0.25s ease-out 0.5s,
+        height 0.25s ease-out 0.75s;
+    }
+
+
+    .meet:hover {
+        color: #fbca67;
+        cursor: pointer;
+    }
+
+
+    .meet::after {
+        top: 0;
+        left: 0;
+    }
+
+
+    .meet:hover::before {
+        border-top-color: #fbca67;
+        border-right-color: #fbca67;
+    }
+
+    .meet:hover::after {
+        border-bottom-color: #fbca67;
+        border-left-color: #fbca67;
+        transition: height 0.25s ease-out,
+        width 0.25s ease-out 0.25s;
+    }
+
+    .meet:hover.meet img {
+        filter: sepia(1);
+    }
+</style>
+{% styles %}

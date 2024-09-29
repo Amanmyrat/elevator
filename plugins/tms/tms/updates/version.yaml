@@ -1,0 +1,20 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table tms_tms_about'
+    - builder_table_create_tms_tms_about.php
+v1.0.3:
+    - 'Updated table tms_tms_about'
+    - builder_table_update_tms_tms_about.php
+v1.0.4:
+    - 'Updated table tms_tms_about'
+    - builder_table_update_tms_tms_about_2.php
+v1.0.5:
+    - 'Updated table tms_tms_about'
+    - builder_table_update_tms_tms_about_3.php
+v1.0.6:
+    - 'Updated table tms_tms_about'
+    - builder_table_update_tms_tms_about_4.php
+v1.0.7:
+    - 'Created table tms_tms_news'
+    - builder_table_create_tms_tms_news.php

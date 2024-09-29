@@ -1,0 +1,10 @@
+name: News
+form: $/tms/tms/models/news/fields.yaml
+modelClass: Tms\Tms\Models\News
+defaultRedirect: tms/tms/news
+create:
+    redirect: 'tms/tms/news/update/:id'
+    redirectClose: tms/tms/news
+update:
+    redirect: tms/tms/news
+    redirectClose: tms/tms/news

@@ -1,0 +1,73 @@
+<div id="top-bar" class="top-bar-style2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="top-bar-info">
+                    <ul class="ps-0">
+                        <li><i class="fas fa-mobile-alt"></i>46-37-80</li>
+                        <li><i class="fas fa-envelope"></i>lift@liftgurlusykwebejeris.gov.tm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-md-block">
+                <ul class="top-social-icon ps-0">
+                    <li>
+                        <a href="#"
+                           data-request="onSwitchLocale"
+                           data-request-data="locale: 'tm'"
+                           data-request-update="'@.localePicker': '#partialLocalePicker'"
+                           class="{% if activeLocale == 'tm' %}h5 {% else %} h6{% endif %}">
+                            TM
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           data-request="onSwitchLocale"
+                           data-request-data="locale: 'ru'"
+                           data-request-update="'@.localePicker': '#partialLocalePicker'"
+                           class="{% if activeLocale == 'ru' %}h5 {% else %} h6{% endif %}">
+                            RU
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="navbar-default">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="menu_area alt-font">
+                    <nav class="navbar navbar-expand-lg navbar-light p-0">
+
+                        <div class="navbar-header navbar-header-custom">
+                            <!-- start logo -->
+                            <a href="{{ 'home'|page }}" class="navbar-brand logodefault">
+                                <img src="{{ 'assets/img/emblem.png'|theme }}" alt="logo">
+                                <span class="text-black font-weight-400 h4 mb-4 w-lg-60">{{
+                                        'Lift Gurluşyk we Bejeriş Tresti'|_
+                                    }}</span>
+                            </a>
+                            <!-- end logo -->
+                        </div>
+
+                        <div class="navbar-toggler"></div>
+
+                        <!-- menu area -->
+                        <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
+                            <li><a href="{{ 'home'|page }}">{{ 'Baş sahypa'|_ }}</a></li>
+                            <li><a href="{{ 'divisions'|page }}">{{ 'Bölümçeler'|_ }}</a></li>
+                            <li><a href="{{ 'news'|page }}">{{ 'Habarlar'|_ }}</a></li>
+                            <li><a href="{{ 'about'|page }}">{{ 'Biz barada'|_ }}</a></li>
+                            <!--                            <li><a href="{{ 'contact'|page }}">{{'Habarlaşmak'|_ }}</a></li>-->
+                        </ul>
+                        <!-- end menu area -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

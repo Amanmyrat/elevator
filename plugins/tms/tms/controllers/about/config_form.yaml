@@ -1,0 +1,10 @@
+name: About
+form: $/tms/tms/models/about/fields.yaml
+modelClass: Tms\Tms\Models\About
+defaultRedirect: tms/tms/about
+create:
+    redirect: 'tms/tms/about/update/:id'
+    redirectClose: tms/tms/about
+update:
+    redirect: tms/tms/about
+    redirectClose: tms/tms/about

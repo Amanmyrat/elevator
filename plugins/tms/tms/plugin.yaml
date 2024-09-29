@@ -1,0 +1,20 @@
+plugin:
+    name: 'tms.tms::lang.plugin.name'
+    description: 'tms.tms::lang.plugin.description'
+    author: Tms
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Tms
+        url: /
+        icon: icon-life-ring
+        sideMenu:
+            side-menu-item2:
+                label: News
+                url: tms/tms/news
+                icon: icon-sitemap
+            side-menu-item:
+                label: About
+                url: tms/tms/about
+                icon: icon-sitemap

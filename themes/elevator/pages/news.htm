@@ -1,0 +1,42 @@
+url = "/news"
+layout = "default"
+title = "Habarlar"
+is_hidden = 0
+==
+<?php
+function onStart(){
+    $this['news'] = \Tms\Tms\Models\News::orderBy('published_at', 'desc')->get();
+}
+?>
+==
+
+<!-- BLOG
+================================================== -->
+<section>
+    <div class="container">
+        <div class="row">
+            {% for item in news %}
+            <div class="col-lg-12 mb-1-9">
+                <article class="card blog-card">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-img bg-img cover-background h-100" data-overlay-dark="0"
+                                 style="background-image: url({{ item.image.getPath() }})"
+                                 data-background="{{ item.image.getPath() }}"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div class="d-block text-muted mb-2 small">{{ item.published_at | date('d M, Y') }}</div>
+                                <h3><a  href="{{'news_details'|page({ news_id: item.id })}}">{{ item.title }}</a></h3>
+                                <p>{{ item.short_description }}</p>
+                                <span class="read-more"><a href="{{'news_details'|page({ news_id: item.id })}}">{{ 'Giňişleýin'|_ }}</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,22 @@
+url = "/about"
+layout = "default"
+title = "Biz barada"
+is_hidden = 0
+==
+<?php
+function onStart(){
+    $this['about'] = \Tms\TMS\Models\About::where('type','about')->latest('id')->get();
+}
+?>
+==
+
+<!-- SERVICES
+================================================== -->
+<section>
+    <div class="container">
+        {% if about != null %}
+        {{ about.first.description |raw  }}
+        {% endif %}
+    </div>
+</section>
+

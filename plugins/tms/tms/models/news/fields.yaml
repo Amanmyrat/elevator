@@ -1,0 +1,27 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        type: text
+    published_at:
+        label: 'Published at'
+        span: auto
+        mode: date
+        type: datepicker
+    short_description:
+        label: 'Short description'
+        span: auto
+        type: textarea
+    description:
+        label: Description
+        span: auto
+        type: textarea
+    image:
+        label: Image
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

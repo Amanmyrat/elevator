@@ -1,0 +1,55 @@
+##
+description = "Default layout"
+
+[session]
+security = "all"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+
+[localePicker]
+forceUrl = 0
+==
+<!DOCTYPE html>
+<html>
+<head>
+    {% partial 'site/head/head-meta' %}
+    <title>Lift gurluşyk we bejeriş tresti</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    {% partial 'site/head/head-links' %}
+    {% partial 'site/head/head-scripts' %}
+</head>
+<body class="{{ 'page-'~this.page.id }}">
+
+<!-- PAGE LOADING
+================================================== -->
+<!--<div id="preloader"></div>-->
+
+<!-- MAIN WRAPPER
+================================================== -->
+<div class="main-wrapper">
+
+    <!-- Header -->
+    <header>
+        {% partial 'site/header' %}
+    </header>
+
+    <!-- Content -->
+    {% page %}
+
+    <!-- Footer -->
+    <footer class="bg-medium-light-gray">
+        {% partial 'site/footer' %}
+    </footer>
+</div>
+
+<!-- SCROLL TO TOP
+================================================== -->
+<a href="#top-bar" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+
+{% scripts %}
+</body>
+</html>

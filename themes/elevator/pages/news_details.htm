@@ -1,0 +1,49 @@
+url = "/news/details/:news_id"
+layout = "default"
+title = "News details"
+is_hidden = 0
+==
+<?php
+function onStart(){
+    $newsId = $this->param('news_id');
+    $this['news'] = \Tms\Tms\Models\News::where('id', $newsId)->get()->first();
+}
+?>
+==
+
+
+<!-- BLOG
+================================================== -->
+<section class="blogs">
+    <div class="container">
+        <div class="row">
+
+            <!--  start blog left-->
+            <div class="">
+                <div class="posts">
+                    <!--  start post-->
+                    <div class="post">
+                        <div class="post-img">
+                            <img src="{{news.image.getPath()}}" alt="...">
+                        </div>
+                        <div class="content">
+                            <div class="blog-list-simple-text">
+                                <div class="post-title">
+                                    <h5>{{ news.title }}</h5>
+                                </div>
+                            </div>
+                            <div class="post-cont">
+                                <p>{{ item.published_at | date('d M, Y') }}</p>
+                                <p>{{ news.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  start post-->
+
+                </div>
+            </div>
+            <!--  end blog left-->
+
+        </div>
+    </div>
+</section>

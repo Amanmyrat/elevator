@@ -1,0 +1,14 @@
+fields:
+    description:
+        label: 'About text'
+        span: auto
+        size: huge
+        type: richeditor
+    type:
+        label: Type
+        span: auto
+        showSearch: true
+        options:
+            about: 'Biz barada'
+            divisions: Bölümçeler
+        type: dropdown

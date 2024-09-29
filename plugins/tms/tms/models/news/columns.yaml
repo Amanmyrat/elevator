@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    title:
+        label: title
+        type: text
+    short_description:
+        label: short_description
+        type: text
+    published_at:
+        label: published_at
+        type: text

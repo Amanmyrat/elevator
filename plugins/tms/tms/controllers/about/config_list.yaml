@@ -1,0 +1,12 @@
+list: $/tms/tms/models/about/columns.yaml
+modelClass: Tms\Tms\Models\About
+title: About
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'tms/tms/about/update/:id'
