@@ -18,3 +18,9 @@ v1.0.6:
 v1.0.7:
     - 'Created table tms_tms_news'
     - builder_table_create_tms_tms_news.php
+v1.0.8:
+    - 'Created table tms_tms_category'
+    - builder_table_create_tms_tms_category.php
+v1.0.9:
+    - 'Updated table tms_tms_news'
+    - builder_table_update_tms_tms_news.php

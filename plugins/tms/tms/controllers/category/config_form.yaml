@@ -1,0 +1,10 @@
+name: Category
+form: $/tms/tms/models/category/fields.yaml
+modelClass: Tms\Tms\Models\Category
+defaultRedirect: tms/tms/category
+create:
+    redirect: 'tms/tms/category/update/:id'
+    redirectClose: tms/tms/category
+update:
+    redirect: tms/tms/category
+    redirectClose: tms/tms/category

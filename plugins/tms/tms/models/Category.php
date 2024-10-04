@@ -2,12 +2,11 @@
 
 use Model;
 use RainLab\Translate\Behaviors\TranslatableModel;
-use System\Models\File;
 
 /**
  * Model
  */
-class News extends Model
+class Category extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
@@ -15,9 +14,7 @@ class News extends Model
         TranslatableModel::class
     ];
 
-    public $translatable = ['title', 'short_description', 'description'];
-
-    protected $dates = ['published_at'];
+    public $translatable = ['name'];
 
     /**
      * @var bool timestamps are disabled.
@@ -28,7 +25,7 @@ class News extends Model
     /**
      * @var string table in the database used by the model.
      */
-    public $table = 'tms_tms_news';
+    public $table = 'tms_tms_category';
 
     /**
      * @var array rules for validation.
@@ -36,11 +33,8 @@ class News extends Model
     public $rules = [
     ];
 
-    public $attachOne = [
-        'image' => File::class,
+    public $hasMany = [
+        'news' => News::class,
     ];
 
-    public $belongsTo = [
-        'category' => Category::class,
-    ];
 }

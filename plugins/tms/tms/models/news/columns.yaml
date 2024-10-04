@@ -2,6 +2,11 @@ columns:
     id:
         label: id
         type: number
+    category:
+        label: category
+        sortable: false
+        type: partial
+        path: ~/plugins/tms/tms/models/news/_category.htm
     title:
         label: title
         type: text
