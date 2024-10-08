@@ -1,6 +1,7 @@
 <?php namespace Tms\Tms\Models;
 
 use Model;
+use RainLab\Translate\Behaviors\TranslatableModel;
 
 /**
  * Model
@@ -8,6 +9,12 @@ use Model;
 class About extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+
+    public $implement = [
+        TranslatableModel::class
+    ];
+
+    public $translatable = ['description'];
 
     /**
      * @var bool timestamps are disabled.
