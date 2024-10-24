@@ -10,8 +10,6 @@ function onStart(){
 }
 ?>
 ==
-
-
 <!-- BLOG
 ================================================== -->
 <section class="blogs">
@@ -33,7 +31,9 @@ function onStart(){
                                 </div>
                             </div>
                             <div class="post-cont">
-                                <p>{{ item.published_at | date('d M, Y') }}</p>
+                                <p>{{ news.published_at | date('d.m.Y') }} 
+                                    <span>| {{ news.category.name }}</span></div>
+                                </p>
                                 <p>{{ news.description }}</p>
                             </div>
                         </div>

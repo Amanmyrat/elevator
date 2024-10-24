@@ -1,4 +1,3 @@
-##
 description = "Default layout"
 
 [session]
@@ -20,7 +19,6 @@ forceUrl = 0
     <meta name="description" content="{{ this.page.meta_description }}">
     <meta name="title" content="{{ this.page.meta_title }}">
     {% partial 'site/head/head-links' %}
-    {% partial 'site/head/head-scripts' %}
 </head>
 <body class="{{ 'page-'~this.page.id }}">
 
@@ -50,6 +48,8 @@ forceUrl = 0
 ================================================== -->
 <a href="#top-bar" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
 
-{% scripts %}
+    {% partial 'site/head/head-scripts' %}
+    {% scripts %}
+
 </body>
 </html>

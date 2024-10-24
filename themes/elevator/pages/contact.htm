@@ -1,0 +1,525 @@
+url = "/contact"
+layout = "default"
+title = "Contact"
+==
+<style>
+    .section-heading h2 em {
+        color: #5689ca;
+        font-style: normal;
+        padding-left: 100px;
+        position: relative;
+    }
+
+    .section-heading h2 em::before {
+        width: 80px;
+        height: 2px;
+        background-color: #5689ca;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 22px;
+    }
+
+    button:focus:not(:focus-visible) {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .page-banner {
+        background-color: #333;
+        /*background-image: url(../images/page-banner-bg.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding: 100px 0px 90px 0px;
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        .page-banner {
+            padding: 180px 0px;
+        }
+    }
+
+    .page-banner h2 {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 768px) {
+        .page-banner h2 {
+            font-size: 50px;
+        }
+    }
+
+    .page-banner h2 em {
+        font-style: normal;
+        color: #5689ca;
+    }
+
+    .page-banner p {
+        color: #ffffff;
+    }
+
+    section.contact-page-map #map {
+        height: 600px;
+        border-radius: 7.5px;
+    }
+
+    section.contact-us-page {
+        padding-top: 0;
+        z-index: 2;
+        position: relative;
+    }
+
+    section.contact-us-page .contact-page-form {
+        padding: 30px;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 7.5px;
+    }
+
+    @media (min-width: 992px) {
+        section.contact-us-page .contact-page-form {
+            padding: 60px;
+        }
+    }
+
+    section.contact-us-page .contact-page-form form {
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+
+    @media (min-width: 992px) {
+        section.contact-us-page .contact-page-form form {
+            margin-right: 45px;
+        }
+    }
+
+    section.contact-us-page .contact-page-form form input {
+        width: 100%;
+        height: 44px;
+        border-radius: 7.5px;
+        border: 1px solid #eeeeee;
+        font-size: 14px;
+        padding: 0px 15px;
+        margin-bottom: 15px;
+    }
+
+    section.contact-us-page .contact-page-form form textarea {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 120px;
+        height: 120px;
+        max-height: 120px;
+        border-radius: 7.5px;
+        border: 1px solid #eeeeee;
+        font-size: 14px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+    }
+
+    section.contact-us-page .contact-page-form form button.main-button {
+        width: 100%;
+    }
+
+    section.contact-us-page .right-info ul {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #eeeeee;
+    }
+
+    @media (min-width: 992px) {
+        section.contact-us-page .right-info ul {
+            margin-top: 0px;
+            padding-top: 0px;
+            border-top: none;
+        }
+    }
+
+    section.contact-us-page .right-info ul li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        border-radius: 7.5px;
+        background-color: #86bc42 ;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    section.contact-us-page .right-info ul li:last-child {
+        margin-bottom: 0px;
+    }
+
+    section.contact-us-page .right-info ul li h6 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    section.contact-us-page .right-info ul li span {
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+    /*# sourceMappingURL=style.css.map */
+</style>
+
+<!-- TESTIMONIAL
+================================================== -->
+<section class="bg-light-gray p-0">
+    <div class="container-fluid">
+    <span class="change-name"></span>
+
+        <section class="contact-page-map" style="padding: 40px 0;">
+            <div class="container expanded">
+                <div id="map"
+                    class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                    tabindex="0" style="position: relative;">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(728.312px, 52px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane">
+                            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 17; transform: translate3d(-591px, 56px, 0px) scale(0.5);"></div>
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; transform: translate3d(-179px, 61px, 0px) scale(1);"><img alt=""
+                                        role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5425&amp;y=3162&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-14px, -103px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5426&amp;y=3162&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(242px, -103px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5425&amp;y=3163&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-14px, 153px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5426&amp;y=3163&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(242px, 153px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5424&amp;y=3162&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-270px, -103px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5427&amp;y=3162&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(498px, -103px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5424&amp;y=3163&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-270px, 153px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5427&amp;y=3163&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(498px, 153px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5425&amp;y=3161&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-14px, -359px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5426&amp;y=3161&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(242px, -359px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5425&amp;y=3164&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-14px, 409px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5426&amp;y=3164&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(242px, 409px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5424&amp;y=3161&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-270px, -359px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5427&amp;y=3161&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(498px, -359px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5424&amp;y=3164&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-270px, 409px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5427&amp;y=3164&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(498px, 409px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5423&amp;y=3162&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-526px, -103px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5428&amp;y=3162&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(754px, -103px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5423&amp;y=3163&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-526px, 153px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5428&amp;y=3163&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(754px, 153px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5423&amp;y=3161&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-526px, -359px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5428&amp;y=3161&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(754px, -359px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5423&amp;y=3164&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-526px, 409px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5428&amp;y=3164&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(754px, 409px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5422&amp;y=3162&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-782px, -103px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5429&amp;y=3162&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(1010px, -103px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5422&amp;y=3163&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-782px, 153px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5429&amp;y=3163&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(1010px, 153px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5422&amp;y=3161&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-782px, -359px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5429&amp;y=3161&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(1010px, -359px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5422&amp;y=3164&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-782px, 409px, 0px); opacity: 1;"><img
+                                        alt="" role="presentation"
+                                        src="https://mt0.google.com/vt/lyrs=y&amp;hl=en&amp;x=5429&amp;y=3164&amp;z=13"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(1010px, 409px, 0px); opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaflet-pane leaflet-shadow-pane"></div>
+                        <div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none"
+                                class="leaflet-zoom-animated" width="1240" height="720" viewBox="-832 -112 1240 720"
+                                style="transform: translate3d(-832px, -112px, 0px);">
+                                <g>
+                                    <path class="leaflet-interactive" stroke="#3e6fdc" stroke-opacity="1"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#f3f3f3"
+                                        fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M-179 192L-180 267L-134 267L-132 193z"></path>
+                                    <path class="leaflet-interactive" stroke="#3e6fdc" stroke-opacity="1"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#f3f3f3"
+                                        fill-opacity="0.7" fill-rule="evenodd" d="M-178 81L-179 112L-224 103L-224 81z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="#3e6fdc" stroke-opacity="1"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#f3f3f3"
+                                        fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M-227 81L-226 104L-252 102L-273 96L-273 84L-269 80L-236 80z"></path>
+                                    <path class="leaflet-interactive" stroke="#3e6fdc" stroke-opacity="1"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#f3f3f3"
+                                        fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M-274 104L-255 110L-256 141L-273 140L-276 137L-276 128z"></path>
+                                    <path class="leaflet-interactive" stroke="#3e6fdc" stroke-opacity="1"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#f3f3f3"
+                                        fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M-323 84L-327 127L-319 127L-298 139L-290 141L-281 139L-278 131L-276 97L-286 89L-297 83L-316 80z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="#3e6fdc" stroke-opacity="1"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#f3f3f3"
+                                        fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M-178 188L-79 191L-78 124L-124 123L-124 152L-177 151z"></path>
+                                </g>
+                            </svg></div>
+                        <div class="leaflet-pane leaflet-marker-pane"></div>
+                        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                        <div class="leaflet-pane leaflet-popup-pane"></div>
+                        <div class="leaflet-proxy leaflet-zoom-animated"
+                            style="transform: translate3d(1.38878e+06px, 809762px, 0px) scale(4096);"></div>
+                    </div>
+                    <div class="leaflet-control-container">
+                        <div class="leaflet-top leaflet-left">
+                            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                    class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button"
+                                    aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#"
+                                    title="Zoom out" role="button" aria-label="Zoom out">−</a></div>
+                        </div>
+                        <div class="leaflet-top leaflet-right"></div>
+                        <div class="leaflet-bottom leaflet-left"></div>
+                        <div class="leaflet-bottom leaflet-right"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-us-page">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="contact-page-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+
+                                <div class="py-6 p-lg-8">
+
+                                    <div class="section-heading title-style6">
+
+                                        <div class="alt-font text-primary text-uppercase letter-spacing-1">
+                                            {{'Habarlaşmak üçin'|_ }}</div>
+                                        <h2><span class="font-weight-500">Bize ýazyň</span></h2>
+
+                                    </div>
+
+                                    <div class="contact-form-box mt-1-9">
+
+                                        <!-- start form here -->
+
+                                        <form class="quform" action="#" method="post" enctype="multipart/form-data"
+                                            onclick="">
+
+                                            <div class="quform-elements">
+
+                                                <div class="row">
+
+                                                    <!-- Begin Text input element -->
+                                                    <div class="col-md-6">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="name" class="form-control" type="text"
+                                                                    name="name" placeholder="{{'Adyňyz'|_ }}" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- Begin Text input element -->
+                                                    <div class="col-md-6">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="last_name" class="form-control" type="text"
+                                                                    name="name" placeholder="{{'Familiýaňyz'|_ }}" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- End Text input element -->
+
+                                                    <!-- Begin Text input element -->
+                                                    <div class="col-md-6">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="subject" class="form-control" type="text"
+                                                                    name="subject" placeholder="{{'Temaňyz'|_ }}" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- End Text input element -->
+
+                                                    <!-- Begin Text input element -->
+                                                    <div class="col-md-6">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="phone" class="form-control" type="text"
+                                                                    name="phone"
+                                                                    placeholder="{{'Telefon belgiňiz'|_ }}" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- End Text input element -->
+
+                                                    <!-- Begin Textarea element -->
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <textarea id="message" class="form-control"
+                                                                    name="message" rows="3"
+                                                                    placeholder="{{'Hatyňyz'|_ }}"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Textarea element -->
+
+                                                    <!-- Begin Submit button -->
+                                                    <div class="col-md-12">
+                                                        <div class="quform-submit-inner">
+                                                            <button class="butn" type="submit"><span>{{'Ugrat'|_
+                                                                    }}</span></button>
+                                                        </div>
+                                                        <div class="quform-loading-wrap text-start"><span
+                                                                class="quform-loading"></span></div>
+                                                    </div>
+                                                    <!-- End Submit button -->
+
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+
+                                        <!-- end form here -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-info">
+                                    <ul>
+                                        <li>
+                                            <h6>1-nji bölümçe</h6>
+                                            <span>Parahat 3/1 jaý 2 “Ýe”</span>
+                                        </li>
+                                        <li>
+                                            <h6>2-nji bölümçe</h6>
+                                            <span>Parahat 1/2 jaý 1 “W”</span>
+                                        </li>
+                                        <li>
+                                            <h6>3-nji bölümçe</h6>
+                                            <span>Parahat 6 jaý 87 (ýarym ýerzemin)</span>
+                                        </li>
+                                        <li>
+                                            <h6>4-nji bölümçe</h6>
+                                            <span>Parahat 7/1 jaý 1 (ýarym ýerzemin) &lt;br&gt; Parahat 7/2 jaý 11
+                                                (ýarym ýerzemin)</span>
+                                        </li>
+                                        <li>
+                                            <h6>5-nji bölümçe</h6>
+                                            <span>Parahat 7/5 jaý 37 (ýarym ýerzemin)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+{% put scripts %}
+<script type="text/javascript" src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/leaflet.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/custom.js'|theme }}"></script>
+{% endput %}
