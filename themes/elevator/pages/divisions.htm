@@ -3,18 +3,136 @@ layout = "default"
 title = "Bölümçeler"
 is_hidden = 0
 ==
-<?php
-function onStart(){
-    $this['about'] = \Tms\TMS\Models\About::where('type','divisions')->latest('id')->get();
-}
-?>
-==
-<!-- SERVICES
-================================================== -->
+
+
 <section>
     <div class="container">
-        {% if about != null %}
-        {{ about.first.description |raw  }}
-        {% endif %}
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="pe-lg-5">
+
+                    <h2 class="font-weight-600">{{'“Lift gurluşyk we bejeriş” tresti'|_}}</h2>
+                    <p class="mb-3 mb-lg-4" style="text-align: justify">{{'2019-njy ýylyň sentýabr aýynyň    05-ne Türkmenistanyň Maliýe we ykdysadyýet ministrliginiň Ýuridiki şahslary we maýa goýum taslamalary döwlet tarapyndan bellige almak bölümi tarapyndan 15791067 san belgi bilen bellige alnan hereket edýän Tertipnamasyna laýyklykda galdyryjy-ulag enjamlaryny gurnamak (sökmek), olary abatlamak we sazlamak hem-de tehniki taýdan hyzmat etmek işlerini ýerine ýetirmek üçin döredilen, merkezleşdirilen býujetden maliýeleşdirilýän döwlet edarasydyr. Onuň garamagynda Ýöriteleşdirilen “Senagatlift” müdirligi hojalyk hasaplaşygynda bolup, welaýat merkezlerinde “Daşoguz”, “Mary”, “Lebap” şahamçalaryny öz içine alýar.'|_}}</p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="bg-img cover-background box-shadow-primary h-100" data-overlay-dark="0" data-background="{{ 'assets/img/elevator_1.jpg'|theme }}">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="bg-light-gray pt-20 pt-lg-24 pb-15">
+    <div class="container z-index-3 position-relative">
+        <div class="text-center mb-2-3 mb-md-6 wow fadeIn" data-wow-delay="100ms">
+            <h2 class="mb-0">{{'Bölümçeler'|_}}</h2>
+        </div>
+        <div class="row align-items-center mt-n2-9">
+            <div class="col-md-6 col-lg-4 mt-2-9 wow fadeIn" data-wow-delay="100ms">
+                <div class="d-flex service-04">
+                    <div class="flex-shrink-0">
+                        <i class="icon-adjustments mt-n1"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h3 class="h5 mb-3"><a href="#!">{{'Parahat3/1 jaý 2“ýe”'|_}}</a></h3>
+                        <p class="mb-0">{{'Jaýlar jemi : 34'|_}}</p>
+                        <p class="mb-0">{{'Liftlar jemi: 152'|_}}</p>
+                        <p class="mb-0">{{'45-91-72'|_}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-2-9 wow fadeIn" data-wow-delay="100ms">
+                <div class="d-flex service-04">
+                    <div class="flex-shrink-0">
+                        <i class="icon-adjustments mt-n1"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h3 class="h5 mb-3"><a href="#!">{{'Parahat1/2 jaý 1w'|_}}</a></h3>
+                        <p class="mb-0">{{'Jaýlar jemi : 38'|_}}</p>
+                        <p class="mb-0">{{'Liftlar jemi: 149'|_}}</p>
+                        <p class="mb-0">{{'46-03-80'|_}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-2-9 wow fadeIn" data-wow-delay="100ms">
+                <div class="d-flex service-04">
+                    <div class="flex-shrink-0">
+                        <i class="icon-adjustments mt-n1"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h3 class="h5 mb-3"><a href="#!">{{'Parahat 6 jaý 87'|_}}</a></h3>
+                        <p class="mb-0">{{'Jaýlar jemi : 54'|_}}</p>
+                        <p class="mb-0">{{'Liftlar jemi: 131'|_}}</p>
+                        <p class="mb-0">{{'96-55-32'|_}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-2-9 wow fadeIn" data-wow-delay="100ms">
+                <div class="d-flex service-04">
+                    <div class="flex-shrink-0">
+                        <i class="icon-adjustments mt-n1"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h3 class="h5 mb-3"><a href="#!">{{'Parahat7/1 jaý 1'|_}}</a></h3>
+                        <p class="mb-0">{{'Jaýlar jemi : 51'|_}}</p>
+                        <p class="mb-0">{{'Liftlar jemi: 149'|_}}</p>
+                        <p class="mb-0">{{'51-22-05'|_}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-2-9 wow fadeIn" data-wow-delay="100ms">
+                <div class="d-flex service-04">
+                    <div class="flex-shrink-0">
+                        <i class="icon-adjustments mt-n1"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h3 class="h5 mb-3"><a href="#!">{{'Parahat7/2 jaý 11'|_}}</a></h3>
+                        <p class="mb-0">{{'Jaýlar jemi : 51'|_}}</p>
+                        <p class="mb-0">{{'Liftlar jemi: 149'|_}}</p>
+                        <p class="mb-0">{{'51-50-11'|_}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-2-9 wow fadeIn" data-wow-delay="100ms">
+                <div class="d-flex service-04">
+                    <div class="flex-shrink-0">
+                        <i class="icon-adjustments mt-n1"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h3 class="h5 mb-3"><a href="#!">{{'Parahat7/3 jaý 37'|_}}</a></h3>
+                        <p class="mb-0">{{'Jaýlar jemi : 70'|_}}</p>
+                        <p class="mb-0">{{'Liftlar jemi: 166'|_}}</p>
+                        <p class="mb-0">{{'51-83-99'|_}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-2-9 wow fadeIn" data-wow-delay="100ms">
+                <div class="d-flex service-04">
+                    <div class="flex-shrink-0">
+                        <i class="icon-adjustments mt-n1"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <h3 class="h5 mb-3"><a href="#!">{{'Parahat7/3 7-nji jaý'|_}}</a></h3>
+                        <p class="mb-0">{{'Jaýlar jemi : 28'|_}}</p>
+                        <p class="mb-0">{{'Liftlar jemi: 82'|_}}</p>
+                        <p class="mb-0">{{'51-10-00'|_}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="{{'assets/img/shape/02.png'|theme}}" class="position-absolute top-20 right-5 ani-top-bottom d-none d-xl-block" alt="...">
+</section>
+
+<section class="parallax" data-overlay-dark="7" data-background="{{'assets/img/bg/bg1.jpg'|theme}}">
+    <div class="container text-center">
+        <div class="section-heading title-style5 half white">
+            <h2>{{'Lift hyzmatlary boýunça maslahat gerekmi?'|_}}</h2>
+            <p>{{'Biz liftler üçin professional maslahat hyzmatlaryny hödürleýäris. Ulgamyňyzyň ygtybarly we howpsuz işlemegini üpjün etmek üçin ähli meseleleriňize iň gowy çözgütleri tapmaga taýýardyrys.'|_}}</p>
+        </div>
+        <a href="{{ 'contact'|page }}" class="butn primary white-hover"><span>{{'Biziň bilen habarlaşyň'|_}}</span></a>
     </div>
 </section>

@@ -3,18 +3,145 @@ layout = "default"
 title = "Biz barada"
 is_hidden = 0
 ==
-<?php
-function onStart(){
-    $this['about'] = \Tms\TMS\Models\About::where('type','about')->latest('id')->get();
-}
-?>
-==
-<!-- SERVICES
-================================================== -->
-<section>
+
+<section class="position-relative">
     <div class="container">
-        {% if about != null %}
-        {{ about.first.description |raw  }}
-        {% endif %}
+        <div class="bg-container"></div>
+        <div class="row align-items-center z-index-1 position-relative">
+            <div class="col-lg-6 mb-1-9 mb-lg-0">
+                <div class="pe-lg-1-9 pe-xl-6">
+                    <div class="section-heading half left">
+                        <h2>{{'Gözegçilik'|_}}</h2>
+                    </div>
+                    <p>
+                        {{'Trestiň hyzmat edýän liftlerinde 1991-nji ýylda neşir edilen “Liftleri ulanmagyň” gollanmasy (“Эксплуатация лифтов”, Справочник, М., Стройиздат, 1991г.) esasynda lift gözegçiniň liftde ýerine ýetirmeli işleriniň sanawy aşakdaky tertipde görkezilýär.'|_}}
+                    </p>
+
+                    <!-- start process section -->
+                    <div class="process-steps-xs">
+                        <ul class="left-holder row mb-0 p-0">
+                            <li class="col-6 col-md-4">
+                                <div class="process-step-xs center-holder">
+                                    <div class="process-step-icon"><i class="icon-grid"></i></div>
+                                    <h3>{{'Şahta gapylarynyň gulplaryny barlamak'|_}}</h3>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="process-step-xs center-holder">
+                                    <div class="process-step-icon"><i class="icon-wallet"></i></div>
+                                    <h3>{{'Kabinanyň gapysynyň gulpuny barlamak'|_}}</h3>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="process-step-xs center-holder">
+                                    <div class="process-step-icon"><i class="icon-briefcase"></i></div>
+                                    <h3>{{'Kabinanyň gapysynyň kontaktlaryny barlamak'|_}}</h3>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="process-step-xs center-holder">
+                                    <div class="process-step-icon"><i class="icon-genius"></i></div>
+                                    <h3>{{'Gapylaryň priwodynyň işleýşini barlamak'|_}}</h3>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="process-step-xs center-holder">
+                                    <div class="process-step-icon"><i class="icon-genius"></i></div>
+                                    <h3>{{'Signalizasiýany, ýagtylandyryşy, her gatda liftiň deň durmaklygyny barlamak'|_}}</h3>
+                                </div>
+                            </li>
+                            <li class="col-6 col-md-4">
+                                <div class="process-step-xs center-holder">
+                                    <div class="process-step-icon"><i class="icon-genius"></i></div>
+                                    <h3>{{'Kabinada arassaçylyk işlerini geçirmek, (ýuwmak, süpürmek)'|_}}</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end process section -->
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-9 text-center">
+                <div class="row g-2">
+                    <div class="col-12">
+                        <img class="border-radius-5" alt="..." src="{{'assets/img/elevator_2.jpg'|theme}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parallax" data-overlay-dark="7" data-background="{{'assets/img/elevator_4.jpg'|theme}}">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-5 mb-1-9 mb-md-0">
+            </div>
+
+            <div class="col-md-7">
+
+                <h2 class="text-white font-weight-600 mb-3">{{'Şahamçalar'|_}}</h2>
+
+                    <p class="display-29 text-white lh-base w-90 m-0">
+                        {{'Aşgabat şäher häkimliginiň Jemagat hojalygy müdirliginiň göni garamagynda “Lift gurluşyk we bejeriş” tresti, Türkmenistanyň “Kärhanalar hakyndaky” kanunyna, Türkmenistanyň Ministrler Kabinetiniň Başlygynyň Orunbasarynyň 2019-njy ýylyň 1-nji maýyndaky 11/15426 san belgili ylalaşyk hatyna laýyklykda hem-de Aşgabat şäher häkiminiň 2019-njy ýylyň 09-njy awgustyndaky 1174 san belgili Karary esasynda döredildi. Trest, Türkmenistanyň Ýaşaýyş jaý kodeksine we Türkmenistanyň beýleki kadalaşdyryjy hukuk namalaryna, Türkmenistanyň Sanitariýa kodeksine, “Liftleriň gurluşy we olary howpsuz ulanmagyň düzgünleri”-niň talaplaryndan ugur alýar.'|_}}
+                    </p>
+                    <div class="separator-line-horrizontal-full bg-white opacity2 my-1-6 my-sm-1-9 my-md-2-9"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+
+    <div class="container-fluid px-lg-0">
+        <div class="horizontaltab tab-style5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div class="box-shadow-large p-2">
+                            <img src="{{'assets/img/elevator_3.jpg'|theme}}" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ps-lg-1-9">
+                            <h3>{{'Barlaglar'|_}}</h3>
+                            <p>
+                                {{'“Lift gurluşyk we bejeriş” trestiniň bölümçeleri liftleri abatlamakda, tehniki hyzmat etmek boýunça, ulanyşda howpsuzlyk derejesini ýokarlandyrmak, sarp edijileri hili pes hyzmatlardan goramak, enjamlaryň talabalaýyk ulanylmagyny amala aşyrýar. Liftleriň arassaçylyk işlerini tassyklanan tertip boýunça wagtynda geçirmegi we olary abat saklamakda gözegçiligi, liftleriň gündelik işjeňliginiň hasabatyny ýöredýär we dessine degişli işleri ýerine ýetirýär.'|_}}
+                            </p>
+
+                            <ul class="list-style-16">
+                                <li>{{'Enjamlaryň doly we dogry ýerinde bolmagy we göýberiş-sazlaýyş işleri'|_}}</li>
+                                <li>{{'Hereket edýän döwlet standartlaryna'|_}}</li>
+                                <li>{{'Döwletara we halkara standartlaryna, kadalaryna, düzgünlerine'|_}}</li>
+                            </ul>
+                            <br><br>
+                            <p>
+                                {{'1973-nji ýylda neşir edilen we GDA ýurtlarynda ulanylýan W-34 ýygyndylar gollanmasynyň talaplary esasynda, liftleri bejermek boýunça elektromehanik tarapyndan bir liftde ýerine ýetirilmeli işleriň görnüşleri goşunda laýyklykda tassyklanylyp düzülýär (TH-1, TH-2, TH-3). Liftiň durkuny täzelemek babatynda hereket edýän «Ýük we ýolagçy liftler boýunça Döwletara standartlaryň tehniki şertleriniň» (TDS 22011-95) talaplaryna laýyklykda ulanyş möhleti 25 ýyl hasaplanylýar. “Liftleriň gurluşy we olary howpsuz ulanmagyň düzgünleri”-niň talaplary esasynda liftleriň islendik görnüşi ýylda bir gezek iki görnüşde synag arkaly  barlagdan geçirilýär we degişli pasportlaryna ýazgy edilýär.'|_}}
+                            </p>
+
+                            <ul class="list-style-16">
+                                <li>{{'Statiki synag – liftiň ýa-da göteriji mehanizmleriň ýük göterijiliginiň ütüne 100 % ýük goýulyp synag edilýär. (hereketsiz)'|_}}</li>
+                                <li>{{'Dinamiki synag – liftiň ýa-da göteriji mehanizmleriň ýük göterijiliginiň ütüne 10 % ýük goýulyp synag edilýär. (hereketli)'|_}}</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parallax" data-overlay-dark="7" data-background="{{'assets/img/bg/bg1.jpg'|theme}}">
+    <div class="container text-center">
+        <div class="section-heading title-style5 half white">
+            <h2>{{'Taryh'|_}}</h2>
+            <p>
+                {{'Aşgabat şäher häkimliginiň Jemagat hojalygy müdirliginiň göni garamagynda “Lift gurluşyk we bejeriş” tresti, Türkmenistanyň “Kärhanalar hakyndaky” kanunyna, Türkmenistanyň Ministrler Kabinetiniň Başlygynyň Orunbasarynyň 2019-njy ýylyň 1-nji maýyndaky 11/15426 san belgili ylalaşyk hatyna laýyklykda hem-de Aşgabat şäher häkiminiň 2019-njy ýylyň 09-njy awgustyndaky 1174 san belgili Karary esasynda döredildi.  Trest, Türkmenistanyň Ýaşaýyş jaý kodeksine we Türkmenistanyň beýleki kadalaşdyryjy hukuk namalaryna, Türkmenistanyň Sanitariýa kodeksine, “Liftleriň gurluşy we olary howpsuz ulanmagyň düzgünleri”-niň talaplaryndan ugur alýar.'|_}}
+            </p>
+        </div>
     </div>
 </section>
