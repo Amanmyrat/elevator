@@ -14,14 +14,6 @@ fields:
         span: auto
         mode: date
         type: datepicker
-    short_description:
-        label: 'Short description'
-        span: auto
-        type: textarea
-    description:
-        label: Description
-        span: auto
-        type: textarea
     image:
         label: Image
         span: auto
@@ -31,3 +23,13 @@ fields:
             mode: crop
             extension: auto
         type: fileupload
+    short_description:
+        label: 'Short description'
+        size: ''
+        span: auto
+        type: richeditor
+    description:
+        label: Description
+        size: ''
+        span: auto
+        type: richeditor
